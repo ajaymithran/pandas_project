@@ -2,53 +2,57 @@
 
 # Pandas Projects
 
-> **A growing portfolio of data-cleaning, analysis, and visualization projects built with Python and pandas.**
+> A growing collection of practical projects in data cleaning, analysis, and visualization with Python and pandas.
 
----
-
-Welcome! Each project explores a dataset, asks practical questions, and shares findings through clear analysis and visualizations. New pandas projects will be added here over time.
+This repository is a portfolio of data projects. Each project explores a dataset, investigates useful questions, and summarizes its findings.
 
 ## Projects
 
 ### Coffee Shop Sales Analysis
 
-Analyze coffee shop transactions to explore revenue by product category and store, daily sales patterns, and customer purchase quantities.
+Explore transaction-level coffee shop sales to understand product-category revenue, store performance, daily activity, and customer purchase quantities.
 
-- [Open the analysis notebook](./coffee_sales_analysis/coffee-shop-pandas-analyis.ipynb)
-- [Read the project details](./coffee_sales_analysis/README.md)
-- Tools: Python, pandas, Matplotlib, Seaborn, Jupyter
-- Main finding: Most transactions contain one or two items; coffee generated the most category revenue.
+- **Project folder:** [`coffee_sales_analysis/`](./coffee_sales_analysis/)
+- **Notebook:** [Coffee shop analysis](./coffee_sales_analysis/coffee-shop-pandas-analyis.ipynb)
+- **Project README:** [Coffee Shop Sales Analysis](./coffee_sales_analysis/README.md)
+- **Tools:** Python, pandas, Matplotlib, Seaborn, Jupyter
 
-#### Run the coffee shop notebook
+The notebook examines data quality, cleans a practice dataset, calculates revenue, and explores the results with charts. Its conclusion highlights coffee as the leading revenue category, Hell's Kitchen as the top store, and one or two items as the most common transaction size.
 
-Install the required Python packages:
+### More projects
 
-```bash
+Additional pandas projects will be added here as they are completed.
+
+## Run a project
+
+Install Python, then install the packages used by the coffee shop notebook:
+
+```powershell
 python -m pip install pandas matplotlib seaborn jupyter
 ```
 
-Open the notebook in Jupyter or Visual Studio Code. The notebook expects its practice CSV in the same folder as the notebook. Data files are intentionally excluded from this repository; obtain the dataset separately and place the required CSV beside the notebook before running it.
+The notebook currently reads `Coffee Shop Sales - pandas practice .csv` from its working directory. Obtain the dataset separately, place it beside the notebook in `coffee_sales_analysis/`, open the notebook in Jupyter or Visual Studio Code, and run its cells from top to bottom.
 
-#### Data and sharing
+## Repository layout
 
-The source coffee shop dataset contains 149,116 transactions and 11 columns. The practice copy is modified for data-cleaning exercises. CSV files are excluded from version control; before sharing any dataset, confirm that its license permits redistribution and follow attribution requirements.
+```text
+pandas_project/
+├── README.md
+├── pandas-project-banner.svg
+├── coffee_sales_analysis/
+│   ├── README.md
+│   ├── coffee-shop-pandas-analyis.ipynb
+│   └── Coffee Shop Sales - pandas practice .csv  # local-only; not committed
+└── data/
+    └── Coffee Shop Sales.csv                     # local-only; not committed
+```
 
-### Upcoming projects
+CSV datasets are excluded from version control, so they are not downloaded with this repository. Before sharing or publishing any data, confirm that its license permits redistribution and follow any attribution requirements.
 
-More projects will be added here as they are completed. Use this format for future entries:
+## Analysis workflow
 
-<!--
-### Project name
-A short description of the question or business problem.
-- Notebook: [Open the analysis](./path/to/notebook.ipynb)
-- Tools: Python, pandas, visualization libraries
-- Key finding: One concise, evidence-based result.
--->
-
-## Typical workflow
-
-1. Load and inspect the data.
-2. Check data types, missing values, and duplicates.
-3. Clean and prepare the data.
-4. Analyze trends and answer project questions.
-5. Create visualizations and summarize evidence-based findings.
+1. Inspect columns, data types, missing values, and duplicate rows.
+2. Clean and prepare the data for analysis.
+3. Group transactions to compare sales by category, product, store, or date.
+4. Visualize patterns and check that conclusions match the results.
+5. Summarize findings and possible business actions.
