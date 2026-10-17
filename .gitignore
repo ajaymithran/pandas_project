@@ -1,0 +1,13 @@
+# Keep local data files out of version control until redistribution permission is confirmed.
+/data/*.csv
+/*pandas practice*.csv
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+
+# Ignore Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Ignore local CSV datasets until sharing permission is confirmed
+*.csv
