@@ -1,28 +1,43 @@
 ![Pandas Projects banner](./pandas-project-banner.svg)
 
-# 📊 Pandas Projects
+# Pandas Projects
 
 > **A growing portfolio of data-cleaning, analysis, and visualization projects built with Python and pandas.**
 
 ---
 
-Welcome! This page introduces my pandas projects and will grow as I add more work. Each project explores a dataset, asks practical questions, and shares findings through clear analysis and visualizations.
+Welcome! Each project explores a dataset, asks practical questions, and shares findings through clear analysis and visualizations. New pandas projects will be added here over time.
 
 ## Projects
 
 ### Coffee Shop Sales Analysis
 
-Analyze coffee shop transactions to explore sales by product category and store, daily sales patterns, and customer purchase quantities.
+Analyze coffee shop transactions to explore revenue by product category and store, daily sales patterns, and customer purchase quantities.
 
-- [Open the analysis notebook](./coffee-shop-pandas-analyis.ipynb)
+- [Open the analysis notebook](./coffee_sales_analysis/coffee-shop-pandas-analyis.ipynb)
+- [Read the project details](./coffee_sales_analysis/README.md)
 - Tools: Python, pandas, Matplotlib, Seaborn, Jupyter
-- Main finding: Most transactions contain one or two items.
+- Main finding: Most transactions contain one or two items; coffee generated the most category revenue.
+
+#### Run the coffee shop notebook
+
+Install the required Python packages:
+
+```bash
+python -m pip install pandas matplotlib seaborn jupyter
+```
+
+Open the notebook in Jupyter or Visual Studio Code. The notebook expects its practice CSV in the same folder as the notebook. Data files are intentionally excluded from this repository; obtain the dataset separately and place the required CSV beside the notebook before running it.
+
+#### Data and sharing
+
+The source coffee shop dataset contains 149,116 transactions and 11 columns. The practice copy is modified for data-cleaning exercises. CSV files are excluded from version control; before sharing any dataset, confirm that its license permits redistribution and follow attribution requirements.
 
 ### Upcoming projects
 
-More pandas projects will be added here as they are uploaded.
+More projects will be added here as they are completed. Use this format for future entries:
 
-<!-- Add future projects using this format:
+<!--
 ### Project name
 A short description of the question or business problem.
 - Notebook: [Open the analysis](./path/to/notebook.ipynb)
@@ -37,7 +52,3 @@ A short description of the question or business problem.
 3. Clean and prepare the data.
 4. Analyze trends and answer project questions.
 5. Create visualizations and summarize evidence-based findings.
-
-## Data sharing
-
-Datasets may be subject to license and attribution requirements. Before publishing project data, confirm that redistribution is permitted. Do not include data files in a public repository unless sharing rights have been verified.
