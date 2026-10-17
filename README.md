@@ -33,18 +33,7 @@ python -m pip install pandas matplotlib seaborn jupyter
 
 The notebook currently reads `Coffee Shop Sales - pandas practice .csv` from its working directory. Obtain the dataset separately, place it beside the notebook in `coffee_sales_analysis/`, open the notebook in Jupyter or Visual Studio Code, and run its cells from top to bottom.
 
-## Repository layout
 
-```text
-pandas_project/
-├── README.md
-├── pandas-project-banner.svg
-├── coffee_sales_analysis/
-│   ├── README.md
-│   ├── coffee-shop-pandas-analyis.ipynb
-│   └── Coffee Shop Sales - pandas practice .csv  
-
-```
 
 CSV datasets are excluded from version control, so they are not downloaded with this repository. Before sharing or publishing any data, confirm that its license permits redistribution and follow any attribution requirements.
 
