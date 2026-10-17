@@ -42,9 +42,8 @@ pandas_project/
 ├── coffee_sales_analysis/
 │   ├── README.md
 │   ├── coffee-shop-pandas-analyis.ipynb
-│   └── Coffee Shop Sales - pandas practice .csv  # local-only; not committed
-└── data/
-    └── Coffee Shop Sales.csv                     # local-only; not committed
+│   └── Coffee Shop Sales - pandas practice .csv  
+
 ```
 
 CSV datasets are excluded from version control, so they are not downloaded with this repository. Before sharing or publishing any data, confirm that its license permits redistribution and follow any attribution requirements.
